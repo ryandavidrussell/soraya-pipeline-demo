@@ -198,4 +198,4 @@ against real code and fails if the code is wrong. The gap report is a measuremen
 """)
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(ssr_mode=False)

@@ -7,6 +7,7 @@ sdk: gradio
 sdk_version: 6.14.0
 python_version: "3.10"
 app_file: app.py
+hf_oauth: true
 pinned: false
 license: apache-2.0
 short_description: Agency-preserving AI governance router — research prototype
