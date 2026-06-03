@@ -20,7 +20,8 @@ STATUS_COLORS = {
     "blocked_or_review_required": ("#cc5b4a", "BLOCKED"),
 }
 
-STAGE_COLORS = {"enforced": "#7fb069", "demo": "#8a9bd4", "halt": "#cc5b4a"}
+STAGE_COLORS = {"enforced": "#7fb069", "demo": "#8a9bd4", "halt": "#cc5b4a",
+                "pep_active": "#7fb069"}
 
 SCENARIOS = {
     "— pick a scenario —": dict(prompt="", prior="", reviewer="healthy",
@@ -83,7 +84,8 @@ def run(prompt, prior, reviewer, authorized, action):
     # Stage trace
     for s in result.stages:
         sc = STAGE_COLORS.get(s.status, "#5e6b58")
-        tag = {"enforced": "ENFORCED", "demo": "DEMO ROUTER", "halt": "PHYSICAL HALT"}[s.status]
+        tag = {"enforced": "ENFORCED", "demo": "DEMO ROUTER", "halt": "PHYSICAL HALT",
+               "pep_active": "PEP ACTIVE"}[s.status]
         rows = "".join(
             f"<div style='display:flex;gap:10px;font-size:11px;padding:1px 0;'>"
             f"<span style='color:#7a8a72;min-width:170px'>{_esc(k)}</span>"

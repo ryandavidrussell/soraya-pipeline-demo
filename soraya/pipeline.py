@@ -33,7 +33,7 @@ from soraya import demo_router
 @dataclass
 class StageTrace:
     name: str
-    status: str          # enforced | demo | halt
+    status: str          # enforced | demo | halt | pep_active
     summary: str
     detail: dict = field(default_factory=dict)
 
@@ -200,7 +200,8 @@ def run_pipeline(
         + (f" · side-effect blocked={decorator_blocked}"
            if requested_action else "")
     )
-    stages.append(StageTrace("5 · Γ PEP Enforcement", "halt", pep_summary, pep_detail))
+    pep_status = "halt" if gate.execution_halted else "pep_active"
+    stages.append(StageTrace("5 · Γ PEP Enforcement", pep_status, pep_summary, pep_detail))
 
     # --- Final status ---
     if gate.execution_halted or disp.disposition in ("block", "emergency_escalate"):
