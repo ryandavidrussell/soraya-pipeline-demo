@@ -55,7 +55,7 @@ of intentions.
 
 For a broader overview of the Kaleidoworks / Soraya governance ecosystem — including Soraya, C3-ICM / LRAI Router, Pre-HITL Evidence Packets, Soraya Scout, the Agency Ledger, and Domain Packs — see:
 
-[ K aleidoworks Systems Portfolio](docs/kaleidoworks-systems-portfolio.md)
+[ Kaleidoworks Systems Portfolio](docs/kaleidoworks-systems-portfolio.md)
 
 ## Scope boundary (read this)
 
