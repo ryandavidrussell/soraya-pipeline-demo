@@ -51,6 +51,12 @@ plus 34 unit tests. Every green checkbox is a test that runs against real code
 and fails if the code is wrong. The gap report is a measurement, not a roadmap
 of intentions.
 
+## Architecture Portfolio
+
+For a broader overview of the Kaleidoworks / Soraya governance ecosystem — including Soraya, C3-ICM / LRAI Router, Pre-HITL Evidence Packets, Soraya Scout, the Agency Ledger, and Domain Packs — see:
+
+[ K aleidoworks Systems Portfolio](docs/kaleidoworks-systems-portfolio.md)
+
 ## Scope boundary (read this)
 
 This is **not production, not enterprise-ready, and not a claim that AI
